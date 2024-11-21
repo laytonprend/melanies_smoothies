@@ -2,6 +2,9 @@
 import streamlit as st
 #from snowflake.snowpark.context import get_active_session #not in snowflake adjustment
 from snowflake.snowpark.functions import col
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
 
 # Write directly to the app
 st.title("My Parents New Healthy Diner :balloon:")
@@ -12,6 +15,8 @@ st.write(
     [docs.streamlit.io](https://docs.streamlit.io).
     """
 )
+
+
 
 
 
