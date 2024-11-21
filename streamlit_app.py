@@ -59,7 +59,7 @@ if ingredients_list: # checks if null
     time_to_insert=st.button('Submit Order')
 
     #sql
-    my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_order) values(' """+ingredients_string+"""','"""+name_on_order+ """')"""
+    my_insert_stmt = """ insert into smoothies.public.orders(ingredients, name_on_order) values('"""+ingredients_string+"""','"""+name_on_order+ """')"""
   #  +"""')""" # no semicolon?
     #st.write(my_insert_stmt)
     #st.stop() #temp
